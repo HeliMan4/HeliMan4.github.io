@@ -16,13 +16,11 @@ function playCraps() {
 
 
     //Check for 7 or 11 meaning loss
-    if (sum == 7) {
-        document.getElementById("gameRes").innerHTML = "CRAPS! You died in battle";
-    } else if (sum == 11) {
+    if (sum == 7 || sum == 11) {
         document.getElementById("gameRes").innerHTML = "CRAPS! You died in battle";
     } 
     //Check for a win
-    else if (die1 == die2 && die1 % die2 == 0) {
+    else if ((die1 == die2) && (die1 % 2 == 0)) {
         document.getElementById("gameRes").innerHTML = "You Won! Hail to the King, baby!";
     //If parameters are not met above, "Push"
     } else {
