@@ -1,32 +1,45 @@
-body {
+html{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: black;
-    color: white;
 }
 nav {
-    height: 6000px;
-    width: 200px;
-    float: left;
-    padding: 5px;
-    line-height: 30px;
-}
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+    a:visited{
+        color: white;
+    }
+    .navLinks {
+        list-style: none;
+    }
+    .navLinks li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+ 
+    
 
 footer {
     text-align: center;
     margin-right: 200px;
 }
-
-#memeImage {
-    margin-right: 200px;
-}
-
 header {
-    text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-radius: 20px;
+        border-color:white;
+        background-color:  rgb(71, 28, 28);
+        border-width: 2px;
+        font-size: large;
+        height: 50px;
+        text-transform: uppercase;
 }
-
-html {
-    background-color: black;
-}
-
 body {
     color: white;
     font-size: medium;
@@ -38,9 +51,9 @@ body {
 
 img {
     border-width: 5px;
-    border-radius: 20px;
+    border-radius: 15%;
     border-color: #fafafa;
-    height: auto;
+    max-width: 60%;
 }
 
 h1 {
@@ -52,13 +65,14 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     background: rgb(71, 28, 28);
+    
 }
 
 h2 {
     text-align: center;
     font-size: x-large;
     line-height: 35px;
-    border: #fafafa;
+    border: white;
     border-style: solid;
     border-radius: 20px;
     padding-left: 10px;
@@ -66,10 +80,6 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     background: rgb(71, 28, 28);
-}
-
-p {
-    text-align: left;
 }
 
 button {
@@ -96,11 +106,21 @@ div {
 table,
 th,
 tr {
-    border: outset white;
+    border: white;
     border-style: solid;
-    text-transform: uppercase;
-    font-size: large;
     border-radius: 20px;
-    align-items: center;
-    line-height: 100%;
+    background-color: rgb(71, 28, 28);
 }
+p{
+    border: solid white 2px;
+    border-radius: 20px;
+    background-color: rgb(71, 28, 28);
+    text-align: justify;
+    font-size: x-large;
+    padding-top: 2%;
+    padding-left:5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+
+}
+
