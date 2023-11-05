@@ -3,8 +3,16 @@
 <!--This is for week One of CSC102
    Create a meme and customize it with a CSS file
     Brian Wimmer
-    bwimmer84895@uat.edu-->
+    bwimmer84895@uat.edu
+
+    11/5/2023
+    Assignment 4.1, event driven programming
+    add start and stop buttons to control memeImage marquee-->
+
+    
+
 <head>
+    <script src="code.js"></script>
     <title>Brian Wimmer Foundation Assignment</title>
     <link rel="stylesheet" href="main.css">
 </head>
@@ -20,20 +28,27 @@
                 <li><a href="./strings.html">Strings</a></li>
             </ul>
         </nav>
-        
+
     </header>
     <h1>Foundation Assignment</h1>
-    
-    <p><img id="memeImage" src="Back to School.jpg"></p>
+   <!--marquee to allow movement of image-->
+    <marquee id="myMarquee" direction="up" class="marq">
+        <center><img id="memeImage" src="Back to School.jpg" style="width:50%;"></center>
+    </marquee>
 </body>
 <br>
+<br>
+<br>
+<!--For event driven programming, assignment 4.1-->
+<button onclick = "startFun();" id="startButton" style="border-radius: 10px;">Start</button><button id="stopButton" onclick = "stopFun();" style="border-radius: 10px;">Stop</button>
+<br>
+<br>
+<br>
+<footer style="margin-right: 5px;">University of Advancing Technology<br>
+    2625 W, Baseline Road<br>
+    Temp, AZ 85283-1056<br>
+    602-383-8228<br>
 
-    <br>
-    <footer style="margin-right: 5px;">University of Advancing Technology<br>
-        2625 W, Baseline Road<br>
-        Temp, AZ 85283-1056<br>
-        <br>
-        602-383-8228<br>
+</footer>
 
-    </footer>
 </html>

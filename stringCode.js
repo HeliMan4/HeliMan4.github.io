@@ -83,3 +83,33 @@ function checkPalin() {
         document.getElementById("palinStatus").innerHTML = entStr + " is <i>not</i> a palindrome";
     }
 }
+function playStation(){
+    //write to the log for debugging
+    console.log("playStation() Started")
+    mySound = new sound("us-lab-background-1.mp3");
+    console.log("playing us-lab-background-1 usion the sound() function");
+    mySound.play();
+    
+}
+function sound(srcFile){
+    //create a instance of the audio class
+    this.sound = document.createElement("audio");
+    //sets the source for srcFile
+    this.sound.src = srcFile;
+    //Loads everything needed for audio
+    this.sound.setAttribute("preload", "audio");
+    //No controls for audio
+    this.sound.setAttribute("controls", "none");
+    //
+    document.body.appendChild(this.sound);
+    //Lets function play audio file
+    this.play = function(){
+        //Play with this
+        this.sound.play();
+    }
+    this.stop = function(){
+        //Pause with this
+        this.sound.pause();
+    }
+
+}
